@@ -40,9 +40,9 @@ namespace Application
                 c.SwaggerDoc("v1",
                     new Info
                     {
-                        Title = "Curso de AspNetCore 2.2",
+                        Title = "ASP.NET Core 2.2 C# API REST com arquitetura DDD na Prática",
                         Version = "v1",
-                        Description = "Exemplo de API REST criada com o ASP.NET Core",
+                        Description = "Exemplo de API REST criada no curso",
                         Contact = new Contact
                         {
                             Name = "Marcos Fabricio Rosa",
