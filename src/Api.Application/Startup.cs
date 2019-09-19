@@ -49,6 +49,19 @@ namespace Application
                             Url = "https://github.com/mfrinfo"
                         }
                     });
+
+                //Colocar JWT no Swagger
+                c.AddSecurityDefinition("Bearer", new ApiKeyScheme
+                {
+                    In = "header",
+                    Description = "Entre com o Token JWT",
+                    Name = "Authorization",
+                    Type = "apiKey"
+                });
+
+                c.AddSecurityRequirement(new Dictionary<string, IEnumerable<string>> {
+                   { "Bearer", Enumerable.Empty<string>() },
+                });
             });
 
             var signingConfigurations = new SigningConfigurations();
